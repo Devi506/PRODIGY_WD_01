@@ -1,0 +1,414 @@
+*{
+
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+
+    display: flex;
+    justify-content: flex-end;
+    background:#ABBBB0;
+    align-items: center;
+    padding: 5px 10%;
+    
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+li, a, button{
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    
+}
+
+nav ul li a{
+    transition: all 0.3s ease 0s;
+    color: black;
+    
+}
+
+nav ul li a:hover {
+
+    color: #504d4d;
+    transition: all 0.3s ease 0s;
+
+
+}
+
+nav ul li a:active{
+
+    color: #504d4d;
+}
+
+header > button{
+
+    background-color: #9AA8AE;
+    padding: 9px 25px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease 0s;
+}
+
+header > button:hover{
+    background-color: #504d4d;
+}
+
+
+
+
+
+/* main content */
+
+
+
+/* wrapper */
+
+.wrapper{
+
+    background: url(Untitled\ design.jpg) no-repeat center center / cover;
+    width: 1200px;
+    height: 540px;
+    margin: 10px 0 0 80px;
+    display: block;
+    position: relative;
+    
+    
+}
+
+.hero-info{
+
+    /* border: 1px solid black; */
+    max-width: 600px;
+    max-height: 350px;
+    display: inline-block;
+    justify-content: center;
+    margin: 130px auto auto 50px;
+}
+
+.hero-info h1{
+
+    font-size: 2rem;
+    font-family: "Work Sans", sans-serif; 
+    font-weight: 500;
+    text-align: justify;
+    margin: auto auto 10px auto;
+    
+}
+
+h1 span ,.Bloom{
+
+    color: goldenrod;
+    animation-name: colorchange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* typing effect */
+
+@keyframes colorchange{
+
+0%{
+    color: #9AA8AE;
+}
+25%{
+    color: #ABBBB0;;
+}
+50%{
+    color: #fff;
+}
+
+100%{
+    color: goldenrod;
+}
+
+}
+
+.hero-info p {
+    line-height: 2;
+    font-weight: 400;
+    text-wrap: wrap;
+    margin: auto auto auto 20px;
+    padding: 2px;
+}
+
+
+/* About section */
+
+
+.wrapper-1{
+min-height: 100vh;
+}
+
+.container{
+
+    width:1200px;
+    min-height: 650px;
+    /* border: 1px solid #504d4d; */
+    margin: 10px auto auto 80px;
+    justify-content: center;
+    position: relative;
+}
+
+.container h1{
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 20px;
+    text-shadow: 5px 5px 5px #9AA8AE;
+}
+
+.center svg{
+
+    position: absolute;
+    bottom: 0;
+}
+
+.center img{
+
+    position: absolute;
+    margin: 30px auto auto 150px;
+    padding: 10px;
+    border: 5px solid #9AA8AE;
+    background-color: #9AA8AE;
+}
+
+
+.circle1{
+    background-color: #ABBBB0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+   position: absolute;
+  left: 950px;
+  top: 10px;
+  z-index: 1;
+   
+    
+}
+
+.circle{
+    background-color: #9AA8AE;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+  left: 900px;
+  z-index: 2;
+}
+.circle2{
+    background-color: #907483;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+  left: 860px;
+  top: 140px;
+  z-index: 3;
+}
+
+.para{
+
+    width: 450px;
+    height: auto;
+    position: absolute;
+    margin: auto auto auto 400px;
+    line-height: 23px;
+    font-size: 0.7rem;
+}
+
+
+/* swiper */
+
+.swap .container{
+
+    background: url(circle-scatter-haikei\ \(1\).png) no-repeat center center / cover;
+}
+
+.img_box img{
+    max-width: 100%;
+    border: 5px solid #907483;
+    border-radius: 40px;
+    box-shadow:2px 2px 5px 2px #99a7ad;
+}
+
+.slider_container .container1{
+
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+.card_slider{
+    padding: 50px 0;
+}
+
+.swiper-button-next{
+
+color: #99a7ad;
+
+}
+
+.swiper-button-prev{
+    color: #99a7ad;
+}
+.swiper-pagination{
+
+    color: #99a7ad;
+    
+    
+}
+
+/* map */
+
+.map{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    align-items: baseline;
+    /* border: 2px solid #000; */
+    padding: 100px;
+    flex-direction: column;
+    position: relative; 
+    top: 0; 
+    background-color: #99a7ad ; 
+}
+
+.map iframe{
+    width: 380px;
+    height: 350px;
+    position: absolute;
+    left: 8px;
+    padding: 5px;
+    bottom: 10px;
+}
+.map p{
+
+    position: absolute;
+    top: 0;
+    left: 180px;
+    font-weight: light;
+    font-size: 1.5rem;
+   
+}
+.contactForm{
+    
+    padding: 40px;
+    position: relative;
+    left: 650px;
+    flex-direction: column;
+    bottom: 10px;
+    background:#99a7ad;
+    
+    
+}
+
+.contactForm h2{
+    position: absolute;
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: 500;
+    top: 0;
+    margin-left: 40px;
+    
+}
+.contactForm .inputBox{
+
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    padding: 5px;
+    right: 0;
+   
+}
+
+.contactForm .inputBox input{
+    border: 1px solid #99a7ad;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.inputBox textarea{
+
+    position: relative;
+    padding: 30px;
+    border: 1px solid #99a7ad;
+    border-radius: 5px;
+}
+
+
+
+.inputBox button{
+    position: relative;
+    left: 60px;
+    padding: 2px;
+    width: 100px;
+    border: none;
+    background-color: #ABBBB0;
+    border-radius: 10px;
+}
+
+.inputBox button:hover{
+
+    background-color: #b9c2bc;
+}
+
+/* footer start */
+
+footer{
+    background-color: #ABBBB0;
+}
+
+.footerContainer{
+    width: 100%;
+    height: 100px;
+    padding: 5px 10px 10px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #907483;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a img{
+    font-size: 2rem;
+    color: #000;
+    width: 20px;
+    height: 20px;
+    transition: all 0.3 ease;
+}
+
+.socialIcons a:hover{
+    background-color: #a88a9a;
+    transition: all 0.3 ease;
+}
+
+.footerBottom{
+
+    text-align: center;
+    padding: 5px;
+
+}
